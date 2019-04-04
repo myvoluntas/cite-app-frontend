@@ -4,6 +4,7 @@ import './App.css';
 import {newTitle, viewTitle} from "./domain/model/lenses/BookLenses";
 import {book1} from "./domain/model/data";
 import {some} from "fp-ts/lib/Option";
+import {Book} from "./domain/model/Book";
 
 
 class App extends Component {
@@ -12,6 +13,9 @@ class App extends Component {
     console.log(book1.title);
     const book1New = newTitle(book1, some('Neuer Titel'));
     console.log(viewTitle(book1New));
+
+    const book3 = Book.newTitleStatic(book1New, some('mega neu digga'));
+    console.log(viewTitle(book3));
 
     return (
       <div className="App">

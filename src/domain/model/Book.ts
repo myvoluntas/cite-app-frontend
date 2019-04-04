@@ -93,9 +93,12 @@ export class Book implements BookInterface {
      return this._customFields
     }
 
-    //todo
-    static updateField (props: string): void {
-        return console.log('implement me: updateField, but change the return type to Book')
-    }
+    private titleLens = R.lensProp('_title');
 
+    //viewTitle = (book: Book) => R.view(this.titleLens, book);
+
+    static newTitleStatic = (book: Book, title: Option<string>) =>  {
+        const titleLens = R.lensProp('_title');
+        return R.set(titleLens, title, book)
+    }
 }

@@ -3,6 +3,7 @@ import * as R from 'ramda';
 import {Option, some} from "fp-ts/lib/Option";
 import {book1} from "../data";
 import {Book} from "../Book";
+import {cons} from "fp-ts/lib/Array";
 
 const titleLens = R.lensProp('_title');
 //const isbn10 = R.lensProp('ssn');

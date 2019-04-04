@@ -31,22 +31,23 @@ interface BookInterface {
 }
 
 export class Book implements BookInterface {
-    constructor(private _id: UUIDIV,
-                private _typeOfBook: TypeOfBook,
-                private _isbn10: Option<string>,
-                private _isbn13: Option<string>,
-                private _edition: Option<number>,
-                private _authors: Option<Array<Person>>,
-                private _collaborators: Option<Array<Person>>,
-                private _publisher: Option<string>,
-                private _placeOfPublication: Option<string>,
-                private _dateOfPublication: Option<string>,
-                private _title: Option<string>,
-                private _subtitle: Option<string>,
-                private _pages: Option<number>,
-                private _language: Option<string>,
-                private _customFields: Option<Array<Map<string,string>>>) {}
+    constructor(readonly id: UUIDIV,
+                readonly typeOfBook: TypeOfBook,
+                readonly isbn10: Option<string>,
+                readonly isbn13: Option<string>,
+                readonly edition: Option<number>,
+                readonly authors: Option<Array<Person>>,
+                readonly collaborators: Option<Array<Person>>,
+                readonly publisher: Option<string>,
+                readonly placeOfPublication: Option<string>,
+                readonly dateOfPublication: Option<string>,
+                readonly title: Option<string>,
+                readonly subtitle: Option<string>,
+                readonly pages: Option<number>,
+                readonly language: Option<string>,
+                readonly customFields: Option<Array<Map<string,string>>>) {}
 
+    /*
     get id(): UUIDIV {
         return this._id
     }
@@ -92,13 +93,30 @@ export class Book implements BookInterface {
     get customFields(): Option<Array<Map<string,string>>> {
      return this._customFields
     }
+     */
 
-    private titleLens = R.lensProp('_title');
+    // helper for lenses
+    static idLens = R.lensProp('id');
+    static typeOfBookLens = R.lensProp('typeOfBook');
+    static isbn10Lens = R.lensProp('isbn10');
+    static isbn13Lens = R.lensProp('isbn13');
+    static editionLens = R.lensProp('edition');
+    static authorsLens = R.lensProp('authors');
+    static collaboratorsLens = R.lensProp('collaborators');
+    static publisherLens = R.lensProp('publisher');
+    static placeOfPublicationLens = R.lensProp('placeOfPublication');
+    static dateOfPublicationLens = R.lensProp('dateOfPublication');
+    static titleLens = R.lensProp('title');
+    static subtitleLens = R.lensProp('subtitle');
+    static pagesLens = R.lensProp('pages');
+    static languageLens = R.lensProp('language');
+    static customFieldsLens = R.lensProp('customFields');
 
-    //viewTitle = (book: Book) => R.view(this.titleLens, book);
+    // Getter lenses
+    static readTitle = (book: Book) => R.view(Book.titleLens, book);
 
-    static newTitleStatic = (book: Book, title: Option<string>) =>  {
-        const titleLens = R.lensProp('_title');
-        return R.set(titleLens, title, book)
+    // Setter lenses
+    static updateTitle = (book: Book, title: Option<string>) =>  {
+        R.set(Book.titleLens, title, book)
     }
 }

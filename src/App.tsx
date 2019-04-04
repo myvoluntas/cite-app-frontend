@@ -1,6 +1,10 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
+import {person1New} from "./domain/model/lenses/BookLenses";
+import {book1} from "./domain/model/data";
+import {some} from "fp-ts/lib/Option";
+
 
 class App extends Component {
   render() {

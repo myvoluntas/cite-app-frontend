@@ -1,13 +1,18 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
-import {person1New} from "./domain/model/lenses/BookLenses";
+import {newTitle, viewTitle} from "./domain/model/lenses/BookLenses";
 import {book1} from "./domain/model/data";
 import {some} from "fp-ts/lib/Option";
 
 
 class App extends Component {
   render() {
+
+    console.log(book1.title);
+    const book1New = newTitle(book1, some('Neuer Titel'));
+    console.log(viewTitle(book1New));
+
     return (
       <div className="App">
         <header className="App-header">

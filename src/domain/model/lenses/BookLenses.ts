@@ -9,4 +9,5 @@ const titleLens = R.lensProp('_title');
 
 //const lastnameLensPara = (x: string) => R.lensProp(x);
 
-export const person1New = (book: Book, title: Option<string>) => R.pipe(R.set(titleLens, title))(book);
+export const newTitle = (book: Book, title: Option<string>) =>R.set(titleLens, title, book);
+export const viewTitle = (book: Book) => R.view(titleLens, book);

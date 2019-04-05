@@ -1,9 +1,13 @@
 import { Option, some, none } from 'fp-ts/lib/Option';
 
-import * as R from 'ramda'
 import v1 from 'uuid/v1';
 import {Person} from "./common";
-import {BookLenses} from "./lenses/BookLenses";
+import {Lens} from "monocle-ts";
+
+/*
+Notes
+- Cant implement properties of an interface as static methods in class: interface BookLens -> class Book
+ */
 
 
 type UUIDIV = string // https://github.com/kelektiv/node-uuid
@@ -30,11 +34,10 @@ interface BookInterface {
     language: Option<string>
     customFields: Option<Array<Map<string,string>>>
 }
-interface BookLens {
 
-}
 
-export class Book implements BookInterface, BookLens {
+
+export class Book implements BookInterface {
     constructor(readonly id: UUIDIV,
                 readonly typeOfBook: TypeOfBook,
                 readonly isbn10: Option<string>,
@@ -99,7 +102,8 @@ export class Book implements BookInterface, BookLens {
     }
      */
 
-    // helper for lenses
+    /*
+        // helper for lenses
     static idLens = R.lensProp('id');
     static typeOfBookLens = R.lensProp('typeOfBook');
     static isbn10Lens = R.lensProp('isbn10');
@@ -117,10 +121,21 @@ export class Book implements BookInterface, BookLens {
     static customFieldsLens = R.lensProp('customFields');
 
     // Getter lenses
-    static readTitle = (book: Book) => R.view(Book.titleLens, book)
+    static readTitle = (book: Book) => R.view(Book.titleLens, book);
 
-    // Setter lenses
-    static updateTitle = (book: Book, title: Option<string>) =>  {
+    Setter lenses
+        static updateTitle = (book: Book, title: Option<string>) =>  {
         R.set(Book.titleLens, title, book)
-    }
+    };
+
+     */
+
+    private static titleLensMonocle =  Lens.fromProp<Book>()('title');
+
+
+    static updateTitle: (book: Book, newTitle: string) => Book =
+        (book: Book, newTitle: string) => Book.titleLensMonocle.set(some(newTitle))(book);
+
+    static readTitle: (book: Book) => any = (book: Book) => Book.titleLensMonocle.get(book);
+
 }

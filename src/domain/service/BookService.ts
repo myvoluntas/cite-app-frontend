@@ -1,5 +1,4 @@
-import {Book} from "../model/Book";
 
-interface BookService <Book> {
-    //todo
+export interface BookService <Book> {
+    cite(book: Book): void
 }

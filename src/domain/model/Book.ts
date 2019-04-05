@@ -3,6 +3,7 @@ import { Option, some, none } from 'fp-ts/lib/Option';
 import * as R from 'ramda'
 import v1 from 'uuid/v1';
 import {Person} from "./common";
+import {BookLenses} from "./lenses/BookLenses";
 
 
 type UUIDIV = string // https://github.com/kelektiv/node-uuid
@@ -29,8 +30,11 @@ interface BookInterface {
     language: Option<string>
     customFields: Option<Array<Map<string,string>>>
 }
+interface BookLens {
 
-export class Book implements BookInterface {
+}
+
+export class Book implements BookInterface, BookLens {
     constructor(readonly id: UUIDIV,
                 readonly typeOfBook: TypeOfBook,
                 readonly isbn10: Option<string>,
@@ -113,7 +117,7 @@ export class Book implements BookInterface {
     static customFieldsLens = R.lensProp('customFields');
 
     // Getter lenses
-    static readTitle = (book: Book) => R.view(Book.titleLens, book);
+    static readTitle = (book: Book) => R.view(Book.titleLens, book)
 
     // Setter lenses
     static updateTitle = (book: Book, title: Option<string>) =>  {

@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
-import {book1} from "./domain/model/data";
-import {Book} from "./domain/model/Book";
+import {book1} from "./domain/repository/data";
+import {Book} from "./domain/model/documents/Book";
 import {some} from "fp-ts/lib/Option";
 //import {BookServiceInterpreter} from "./domain/service/interpreter/BookServiceInterpreter";
 
@@ -16,7 +16,6 @@ class App extends Component {
     const newBookMonocle = Book.updateTitle(book1, some('New title generate with monocle'));
     const getTitleWithMonocle = Book.readTitle(newBookMonocle);
     console.log('Book.readTitle(newBookMonocle):' + getTitleWithMonocle);
-    console.log()
 
     return (
       <div className="App">

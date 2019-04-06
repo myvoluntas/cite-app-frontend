@@ -1,5 +1,5 @@
 import {BookService} from "../BookService";
-import {Book} from "../../model/Book";
+import {Book} from "../../model/documents/Book";
 
 export class BookServiceInterpreter implements BookService<Book>{
 

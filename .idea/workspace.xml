@@ -2,10 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c3a70257-5379-4e6a-870b-1dc17b671bdc" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/domain/model/Link.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/domain/model/SourceElement.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/h_gbr.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dictionaries/h_gbr.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/domain/model/Book.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/domain/model/Book.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/domain/model/lenses/BookLenses.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/domain/model/Book.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/domain/model/documents/Book.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/domain/model/common.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/domain/model/utility/common.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/domain/model/data.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/domain/repository/data.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/domain/service/interpreter/BookServiceInterpreter.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/domain/service/interpreter/BookServiceInterpreter.ts" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -20,66 +24,26 @@
   <component name="FileEditorManager">
     <leaf>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/domain/model/Book.ts">
+        <entry file="file://$PROJECT_DIR$/src/domain/model/SourceElement.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1045">
-              <caret line="2" selection-start-line="2" selection-end-line="2" />
+            <state relative-caret-position="546">
+              <caret line="33" lean-forward="true" selection-start-line="33" selection-end-line="33" />
               <folding>
-                <element signature="n#t#0" />
-                <element signature="e#1629#2778#0" />
-                <element signature="e#2938#3993#0" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/domain/service/interpreter/BookServiceInterpreter.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="184">
-              <caret line="8" column="1" lean-forward="true" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
-              <folding>
-                <element signature="e#0#43#0" expanded="true" />
+                <element signature="e#0#40#0" expanded="true" />
+                <element signature="n#Kind#0" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/App.tsx">
+        <entry file="file://$PROJECT_DIR$/src/domain/model/documents/Book.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="23">
-              <caret line="2" column="19" selection-start-line="2" selection-start-column="19" selection-end-line="2" selection-end-column="19" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/domain/model/data.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="230">
-              <caret line="10" selection-start-line="10" selection-end-line="10" />
+            <state relative-caret-position="211">
+              <caret line="18" column="25" lean-forward="true" selection-start-line="18" selection-start-column="25" selection-end-line="18" selection-end-column="25" />
               <folding>
-                <element signature="e#0#40#0" expanded="true" />
+                <element signature="e#0#54#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/domain/model/common.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="276">
-              <caret line="12" column="1" lean-forward="true" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/domain/service/BookService.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="69">
-              <caret line="3" column="1" lean-forward="true" selection-start-line="3" selection-start-column="1" selection-end-line="3" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -107,14 +71,16 @@
         <option value="$PROJECT_DIR$/src/domain/scripting.ts" />
         <option value="$PROJECT_DIR$/src/domain/domain/common" />
         <option value="$PROJECT_DIR$/src/domain/domain/Book" />
-        <option value="$PROJECT_DIR$/src/domain/model/data.ts" />
         <option value="$PROJECT_DIR$/src/domain/service/BookService.ts" />
         <option value="$PROJECT_DIR$/tsconfig.json" />
         <option value="$PROJECT_DIR$/src/domain/model/lenses/BookLenses.ts" />
-        <option value="$PROJECT_DIR$/src/domain/model/Book.ts" />
         <option value="$PROJECT_DIR$/src/domain/service/interpreter/BookServiceInterpreter.ts" />
         <option value="$PROJECT_DIR$/src/domain/model/common.ts" />
+        <option value="$PROJECT_DIR$/src/domain/model/data.ts" />
         <option value="$PROJECT_DIR$/src/App.tsx" />
+        <option value="$PROJECT_DIR$/src/domain/model/SourceElement.ts" />
+        <option value="$PROJECT_DIR$/src/domain/model/Link.ts" />
+        <option value="$PROJECT_DIR$/src/domain/model/Book.ts" />
       </list>
     </option>
   </component>
@@ -155,6 +121,22 @@
               <item name="domain" type="462c0819:PsiDirectoryNode" />
               <item name="model" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="cite-app-frontend" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cite-app-frontend" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="domain" type="462c0819:PsiDirectoryNode" />
+              <item name="model" type="462c0819:PsiDirectoryNode" />
+              <item name="documents" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cite-app-frontend" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cite-app-frontend" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="domain" type="462c0819:PsiDirectoryNode" />
+              <item name="model" type="462c0819:PsiDirectoryNode" />
+              <item name="utility" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -171,6 +153,9 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/domain/model/documents" />
+      <recent name="$PROJECT_DIR$/src/domain/repository" />
+      <recent name="$PROJECT_DIR$/src/domain/model/utility" />
       <recent name="$PROJECT_DIR$/src/domain/model/lenses" />
     </key>
   </component>
@@ -196,7 +181,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1554363444374</updated>
-      <workItem from="1554363446687" duration="36977000" />
+      <workItem from="1554363446687" duration="58750000" />
     </task>
     <task id="LOCAL-00001" summary="starting the service parts.">
       <created>1554398023195</created>
@@ -247,21 +232,36 @@
       <option name="project" value="LOCAL" />
       <updated>1554462079122</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Replaced Ramda lenses with monocle-ts. &#10;Delete Ramda usage.">
+      <created>1554465145747</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1554465145747</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Implement all readers and setter with lenses for class Book.">
+      <created>1554489717385</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1554489717385</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="36977000" />
+    <option name="totallyTimeSpent" value="58750000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Favorites" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.23351866" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.23351866" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="TypeScript" weight="0.19733334" />
       <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
-      <window_info active="true" anchor="bottom" id="Version Control" visible="true" weight="0.344" />
+      <window_info anchor="bottom" id="Version Control" weight="0.344" />
       <window_info anchor="bottom" id="Terminal" weight="0.428" />
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -286,13 +286,15 @@
     <MESSAGE value="Add a working static lens method." />
     <MESSAGE value="Implement working, static lenses in BookLenses-class." />
     <MESSAGE value="Implement lenses for title in Book with monocle-ts." />
-    <option name="LAST_COMMIT_MESSAGE" value="Implement lenses for title in Book with monocle-ts." />
+    <MESSAGE value="Replaced Ramda lenses with monocle-ts. &#10;Delete Ramda usage." />
+    <MESSAGE value="Implement all readers and setter with lenses for class Book." />
+    <option name="LAST_COMMIT_MESSAGE" value="Implement all readers and setter with lenses for class Book." />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/domain/scripting.ts">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/domain/model/Book.ts">
+    <entry file="file://$PROJECT_DIR$/src/domain/model/documents/Book.ts">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/node_modules/typescript/lib/lib.es2015.symbol.wellknown.d.ts">
@@ -326,30 +328,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/domain/model/data.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="10" selection-start-line="10" selection-end-line="10" />
-          <folding>
-            <element signature="e#0#40#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/domain/model/common.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="276">
-          <caret line="12" column="1" lean-forward="true" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/domain/service/BookService.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="69">
-          <caret line="3" column="1" lean-forward="true" selection-start-line="3" selection-start-column="1" selection-end-line="3" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/domain/service/interpreter/BookServiceInterpreter.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="184">
@@ -360,22 +338,83 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/domain/model/Book.ts">
+    <entry file="file://$PROJECT_DIR$/src/domain/service/BookService.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1045">
-          <caret line="2" selection-start-line="2" selection-end-line="2" />
-          <folding>
-            <element signature="n#t#0" />
-            <element signature="e#1629#2778#0" />
-            <element signature="e#2938#3993#0" />
-          </folding>
+        <state relative-caret-position="69">
+          <caret line="3" column="1" lean-forward="true" selection-start-line="3" selection-start-column="1" selection-end-line="3" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/monocle-ts/lib/index.d.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="109" column="44" selection-start-line="109" selection-start-column="27" selection-end-line="109" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external/lib.dom.d.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="237">
+          <caret line="14725" column="12" selection-start-line="14725" selection-start-column="12" selection-end-line="14725" selection-end-column="12" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/App.tsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="23">
-          <caret line="2" column="19" selection-start-line="2" selection-start-column="19" selection-end-line="2" selection-end-column="19" />
+        <state relative-caret-position="230">
+          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+            <element signature="e#312#758#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/domain/repository/data.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="8" column="80" lean-forward="true" selection-start-line="8" selection-start-column="80" selection-end-line="8" selection-end-column="80" />
+          <folding>
+            <element signature="e#0#40#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/domain/model/utility/common.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="276">
+          <caret line="12" column="1" lean-forward="true" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/domain/model/Link.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="322">
+          <caret line="19" column="1" lean-forward="true" selection-start-line="19" selection-start-column="1" selection-end-line="19" selection-end-column="1" />
+          <folding>
+            <element signature="n#Rating#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/domain/model/SourceElement.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="546">
+          <caret line="33" lean-forward="true" selection-start-line="33" selection-end-line="33" />
+          <folding>
+            <element signature="e#0#40#0" expanded="true" />
+            <element signature="n#Kind#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/domain/model/documents/Book.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="211">
+          <caret line="18" column="25" lean-forward="true" selection-start-line="18" selection-start-column="25" selection-end-line="18" selection-end-column="25" />
+          <folding>
+            <element signature="e#0#54#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

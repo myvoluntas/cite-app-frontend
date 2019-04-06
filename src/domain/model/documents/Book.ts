@@ -1,23 +1,23 @@
 import { Option, some, none } from 'fp-ts/lib/Option';
 
-import v1 from 'uuid/v1';
-import {Person} from "./common";
+import {Person} from "../utility/common";
 import {Lens} from "monocle-ts";
+import uuid4 from "uuid/v4";
 
 /*
 Notes
 - Cant implement properties of an interface as static methods in class: interface BookLens -> class Book
  */
 
-type UUIDIV = string // https://github.com/kelektiv/node-uuid
-
+type UUIDIV = string // https://github.com/kelektiv/node-uuid#readme
+export type BookId = string
 export enum TypeOfBook{
     Monograph,
     Collected
 }
 
 interface BookInterface {
-    id: UUIDIV
+    id: BookId
     typeOfBook: TypeOfBook
     isbn10: Option<string>
     isbn13: Option<string>
@@ -32,10 +32,11 @@ interface BookInterface {
     pages: Option<number>
     language: Option<string>
     customFields: Option<Array<Map<string,string>>>
+    coverFilePath: string
 }
 
 export class Book implements BookInterface {
-    constructor(readonly id: UUIDIV,
+    constructor(readonly id: BookId = uuid4(),
                 readonly typeOfBook: TypeOfBook,
                 readonly isbn10: Option<string>,
                 readonly isbn13: Option<string>,
@@ -49,56 +50,8 @@ export class Book implements BookInterface {
                 readonly subtitle: Option<string>,
                 readonly pages: Option<number>,
                 readonly language: Option<string>,
-                readonly customFields: Option<Array<Map<string,string>>>) {}
-
-    /*
-    get id(): UUIDIV {
-        return this._id
-    }
-    get typeOfBook(): TypeOfBook {
-        return this._typeOfBook
-    }
-    get isbn10():Option<string> {
-        return this._isbn10
-    }
-    get isbn13(): Option<string> {
-        return this._isbn13
-    }
-    get edition(): Option<number> {
-        return this._edition
-    }
-    get authors(): Option<Array<Person>> {
-        return this._authors
-    }
-    get collaborators(): Option<Array<Person>> {
-        return this._collaborators
-    }
-    get publisher(): Option<string> {
-        return this._publisher
-    }
-    get placeOfPublication(): Option<string> {
-        return this._placeOfPublication
-    }
-    get dateOfPublication(): Option<string> {
-        return this._dateOfPublication
-    }
-    get title(): Option<string> {
-        return this._title
-    }
-    get subtitle(): Option<string> {
-        return this._subtitle
-    }
-    get pages(): Option<number> {
-        return this._pages
-    }
-    get language(): Option<string> {
-        return  this._language
-    }
-    get customFields(): Option<Array<Map<string,string>>> {
-     return this._customFields
-    }
-     */
-
+                readonly customFields: Option<Array<Map<string,string>>>,
+                readonly coverFilePath: string) {}
 
     // Lenses
     private static typeOfBookLens = Lens.fromProp<Book>()('typeOfBook');
@@ -115,7 +68,7 @@ export class Book implements BookInterface {
     private static pagesLens = Lens.fromProp<Book>()('pages');
     private static languageLens = Lens.fromProp<Book>()('language');
     private static customFieldsLens = Lens.fromProp<Book>()('customFields');
-
+    private static coverFilePathLens = Lens.fromProp<Book>()('coverFilePath');
 
 
     //Setter
@@ -127,7 +80,6 @@ export class Book implements BookInterface {
 
     static updateIsbn13: (book: Book, newIsbn13: Option<string>) => Book =
         (book: Book, newIsbn13: Option<string>) => Book.isbn10Lens.set(newIsbn13)(book);
-
 
     static updateEdition: (book: Book, newEdition: Option<number>) => Book =
         (book: Book, newEdition: Option<number>) => Book.editionLens.set(newEdition)(book);
@@ -161,6 +113,9 @@ export class Book implements BookInterface {
 
     static updateCustomFields: (book: Book, newCustomFields: Option<Array<Map<string, string>>>) => Book =
         (book: Book, newCustomFields: Option<Array<Map<string,string>>>) => Book.customFieldsLens.set(newCustomFields)(book);
+
+    static updateCoverFilePath: (book: Book, newCover: string) => Book =
+        (book: Book, newCover: string) => Book.coverFilePathLens.set(newCover)(book);
 
     // Reader
     static readTypeOfBook =
@@ -204,6 +159,9 @@ export class Book implements BookInterface {
 
     static readCustomFields =
         (book: Book) => Book.customFieldsLens.get(book);
+
+    static readCoverFilePath =
+        (book: Book) => Book.coverFilePathLens.get(book)
 
 
     /*

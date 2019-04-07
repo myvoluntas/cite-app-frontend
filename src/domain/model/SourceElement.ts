@@ -31,4 +31,3 @@ interface KnowledgeElement {
     caption: Option<string> // Bildunterschrift
     path: Option<string>
 }
-

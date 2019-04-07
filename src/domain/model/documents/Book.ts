@@ -13,7 +13,7 @@ type UUIDIV = string // https://github.com/kelektiv/node-uuid#readme
 export type BookId = string
 export enum TypeOfBook{
     Monograph,
-    Collected
+    BookEdited
 }
 
 interface BookInterface {

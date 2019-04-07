@@ -2,15 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c3a70257-5379-4e6a-870b-1dc17b671bdc" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/domain/model/documents/ArchiveMaterial.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/domain/model/documents/File.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/domain/model/documents/NewsAgencyReport.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/domain/model/documents/UnpublishedWork.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/h_gbr.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dictionaries/h_gbr.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/domain/model/documents/Contribution.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/domain/model/documents/LegalCommentary.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/domain/model/documents/Map.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/domain/model/SourceElement.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/domain/model/SourceElement.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/domain/model/documents/Book.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/domain/model/documents/Book.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/domain/repository/data.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/domain/repository/data.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/domain/model/documents/UnpublishedWork.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/domain/model/documents/UnpublishedWork.ts" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -24,28 +21,10 @@
   <component name="FileEditorManager">
     <leaf>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/domain/model/documents/File.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="488">
-              <caret line="22" column="25" selection-start-line="22" selection-start-column="25" selection-end-line="22" selection-end-column="25" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/domain/model/documents/ArchiveMaterial.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="552">
-              <caret line="24" column="26" selection-start-line="24" selection-start-column="26" selection-end-line="24" selection-end-column="26" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/domain/model/documents/Book.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="565">
-              <caret line="34" column="13" lean-forward="true" selection-start-line="34" selection-end-line="35" />
+            <state relative-caret-position="230">
+              <caret line="10" column="66" selection-start-line="10" selection-start-column="66" selection-end-line="10" selection-end-column="66" />
               <folding>
                 <element signature="e#0#54#0" expanded="true" />
               </folding>
@@ -56,11 +35,20 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/domain/model/documents/NewsAgencyReport.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="483">
-              <caret line="21" column="25" selection-start-line="21" selection-start-column="25" selection-end-line="21" selection-end-column="25" />
+            <state relative-caret-position="460">
+              <caret line="20" column="4" lean-forward="true" selection-start-line="20" selection-start-column="4" selection-end-line="21" selection-end-column="25" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/domain/model/documents/Map.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="391">
+              <caret line="17" column="1" lean-forward="true" selection-start-line="17" selection-start-column="1" selection-end-line="17" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -81,6 +69,11 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -98,19 +91,22 @@
         <option value="$PROJECT_DIR$/src/domain/model/Link.ts" />
         <option value="$PROJECT_DIR$/src/domain/model/Book.ts" />
         <option value="$PROJECT_DIR$/src/domain/model/documents/NewAgencyReport.ts" />
-        <option value="$PROJECT_DIR$/src/domain/model/documents/Book.ts" />
-        <option value="$PROJECT_DIR$/src/domain/model/documents/UnpublishedWork.ts" />
         <option value="$PROJECT_DIR$/src/domain/model/SourceElement.ts" />
-        <option value="$PROJECT_DIR$/src/domain/model/documents/NewsAgencyReport.ts" />
         <option value="$PROJECT_DIR$/src/domain/model/documents/File.ts" />
         <option value="$PROJECT_DIR$/src/domain/model/documents/ArchiveMaterial.ts" />
+        <option value="$PROJECT_DIR$/src/domain/model/documents/LegalCommentary.ts" />
+        <option value="$PROJECT_DIR$/src/domain/model/documents/NewsAgencyReport.ts" />
+        <option value="$PROJECT_DIR$/src/domain/model/documents/Contribution.ts" />
+        <option value="$PROJECT_DIR$/src/domain/model/documents/Book.ts" />
+        <option value="$PROJECT_DIR$/src/domain/model/documents/UnpublishedWork.ts" />
+        <option value="$PROJECT_DIR$/src/domain/model/documents/Map.ts" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="y" value="28" />
-    <option name="width" value="632" />
-    <option name="height" value="772" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="y" value="23" />
+    <option name="width" value="1174" />
+    <option name="height" value="777" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -204,7 +200,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1554363444374</updated>
-      <workItem from="1554363446687" duration="63761000" />
+      <workItem from="1554363446687" duration="66381000" />
     </task>
     <task id="LOCAL-00001" summary="starting the service parts.">
       <created>1554398023195</created>
@@ -276,11 +272,18 @@
       <option name="project" value="LOCAL" />
       <updated>1554587458944</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Implement interfaces for ArchivMaterial, File, NewsAgencyReport.">
+      <created>1554638417720</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1554638417720</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="63761000" />
+    <option name="totallyTimeSpent" value="66381000" />
   </component>
   <component name="TodoView" selected-index="4">
     <todo-panel id="selected-file">
@@ -293,14 +296,13 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="28" width="632" height="772" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info id="Favorites" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="0" weight="0.48465267" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.4844517" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="TypeScript" weight="0.19716312" />
       <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" weight="0.344" />
+      <window_info active="true" anchor="bottom" id="Version Control" visible="true" weight="0.34285715" />
       <window_info anchor="bottom" id="Terminal" weight="0.428" />
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -328,7 +330,8 @@
     <MESSAGE value="Replaced Ramda lenses with monocle-ts. &#10;Delete Ramda usage." />
     <MESSAGE value="Implement all readers and setter with lenses for class Book." />
     <MESSAGE value="Implement interfaces for data model." />
-    <option name="LAST_COMMIT_MESSAGE" value="Implement interfaces for data model." />
+    <MESSAGE value="Implement interfaces for ArchivMaterial, File, NewsAgencyReport." />
+    <option name="LAST_COMMIT_MESSAGE" value="Implement interfaces for ArchivMaterial, File, NewsAgencyReport." />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/domain/scripting.ts">
@@ -455,44 +458,65 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/domain/model/documents/UnpublishedWork.ts">
+    <entry file="file://$PROJECT_DIR$/src/domain/model/documents/ArchiveMaterial.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
-          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
+        <state relative-caret-position="621">
+          <caret line="27" column="1" lean-forward="true" selection-start-line="27" selection-start-column="1" selection-end-line="27" selection-end-column="1" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/domain/model/documents/File.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="488">
-          <caret line="22" column="25" selection-start-line="22" selection-start-column="25" selection-end-line="22" selection-end-column="25" />
+        <state relative-caret-position="502">
+          <caret line="23" column="1" lean-forward="true" selection-start-line="23" selection-start-column="1" selection-end-line="23" selection-end-column="1" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/domain/model/documents/NewsAgencyReport.ts">
+    <entry file="file://$PROJECT_DIR$/src/domain/model/documents/LegalCommentary.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="483">
-          <caret line="21" column="25" selection-start-line="21" selection-start-column="25" selection-end-line="21" selection-end-column="25" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
+        <state relative-caret-position="391">
+          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/domain/model/documents/Book.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="565">
-          <caret line="34" column="13" lean-forward="true" selection-start-line="34" selection-end-line="35" />
+        <state relative-caret-position="230">
+          <caret line="10" column="66" selection-start-line="10" selection-start-column="66" selection-end-line="10" selection-end-column="66" />
           <folding>
             <element signature="e#0#54#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/domain/model/documents/ArchiveMaterial.ts">
+    <entry file="file://$PROJECT_DIR$/src/domain/model/documents/Contribution.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="552">
-          <caret line="24" column="26" selection-start-line="24" selection-start-column="26" selection-end-line="24" selection-end-column="26" />
+        <state relative-caret-position="575">
+          <caret line="25" selection-start-line="25" selection-end-line="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/domain/model/documents/UnpublishedWork.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="92">
+          <caret line="4" selection-start-line="4" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/domain/model/documents/NewsAgencyReport.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="460">
+          <caret line="20" column="4" lean-forward="true" selection-start-line="20" selection-start-column="4" selection-end-line="21" selection-end-column="25" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/domain/model/documents/Map.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="17" column="1" lean-forward="true" selection-start-line="17" selection-start-column="1" selection-end-line="17" selection-end-column="1" />
         </state>
       </provider>
     </entry>

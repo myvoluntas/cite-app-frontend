@@ -7,6 +7,8 @@ import uuid4 from "uuid/v4";
 /*
 Notes
 - Cant implement properties of an interface as static methods in class: interface BookLens -> class Book
+https://www1.citavi.com/sub/manual6/de/index.html?book.html
+https://www1.citavi.com/sub/manual6/de/index.html?edited_book.html
  */
 
 type UUIDIV = string // https://github.com/kelektiv/node-uuid#readme
@@ -18,12 +20,18 @@ export enum TypeOfBook{
 
 interface BookInterface {
     id: BookId
+    accessDate: Option<Date> // onlineAddress
+    onlineAddress: Option<string>
     typeOfBook: TypeOfBook
     isbn10: Option<string>
     isbn13: Option<string>
+    volume: Option<number>
+    numberOfVolumes: Option<string>
     edition: Option<number>
+    seriesTitle: Option<string>
     authors: Option<Array<Person>>
     collaborators: Option<Array<Person>>
+    institution: Option<string>
     publisher: Option<string>
     placeOfPublication: Option<string>
     dateOfPublication: Option<string>

@@ -1,14 +1,12 @@
-
-
-/*
-https://www1.citavi.com/sub/manual5/de/court_decision.html
-scli: https://de.wikipedia.org/wiki/European_Case_Law_Identifier
- */
-
 import {Option} from "fp-ts/lib/Option";
 
 /**
  * {@link http://www.citethisforme.com/cite/book}
+ * {@link https://en.wikipedia.org/wiki/Case_citation}
+ * {@link https://de.wikipedia.org/wiki/European_Case_Law_Identifier}
+ * {@link https://www1.citavi.com/sub/manual5/de/court_decision.html}
+ *
+ * @param court - Court that issued the decision
  */
 interface CourtDecision {
     id: string
@@ -16,10 +14,14 @@ interface CourtDecision {
     accessDate: Option<Date>
     dateOfDecision: Option<Date>
     court: Option<string>
+    abbreviatedTitleOfCourt: Option<string>
     source: Option<string>
-    issueNumber: Option<string>
+    decisionNumber: Option<string>
+    reportAbbreviationCode: Option<string>
     pageRange: Option<string>
     sections: Option<Array<string>>
+    paragraphNumber: Option<Array<string>>
+    volumeNumber: Option<string>
     fileNumber: Option<string>
     typeOfDecision: Option<string>
     ecli: Option<string>

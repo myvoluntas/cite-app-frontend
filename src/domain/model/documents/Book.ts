@@ -18,6 +18,9 @@ export enum TypeOfBook{
     BookEdited
 }
 
+/**
+ * {@link http://www.citethisforme.com/cite/chapter-of-an-edited-book}
+ */
 interface BookInterface {
     id: BookId
     accessDate: Option<Date> // onlineAddress

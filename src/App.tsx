@@ -10,6 +10,7 @@ class App extends Component {
   render() {
 
     console.log(book1.title);
+    console.log('readVolume: ' + Book.readVolume(book1, 'authors'));
 
     //Monocle
     console.log('----------- Monocle-ts -------------');

@@ -30,7 +30,7 @@ interface BookInterface {
     edition: Option<number>
     seriesTitle: Option<string>
     authors: Option<Array<Person>>
-    collaborators: Option<Array<Person>>
+    collaborators: Option<ReadonlyArray<Person>>
     institution: Option<string>
     publisher: Option<string>
     placeOfPublication: Option<string>
@@ -39,7 +39,7 @@ interface BookInterface {
     subtitle: Option<string>
     pages: Option<number>
     language: Option<string>
-    customFields: Option<Array<Map<string,string>>>
+    customFields: Option<ReadonlyArray<Map<string,string>>>
     coverFilePath: string
 }
 
@@ -49,8 +49,12 @@ export class Book implements BookInterface {
                 readonly isbn10: Option<string>,
                 readonly isbn13: Option<string>,
                 readonly edition: Option<number>,
+                readonly volume: Option<number>,
+                readonly numberOfVolumes: Option<string>,
+                readonly seriesTitle: Option<string>,
                 readonly authors: Option<Array<Person>>,
                 readonly collaborators: Option<Array<Person>>,
+                readonly institution: Option<string>,
                 readonly publisher: Option<string>,
                 readonly placeOfPublication: Option<string>,
                 readonly dateOfPublication: Option<string>,
@@ -58,9 +62,13 @@ export class Book implements BookInterface {
                 readonly subtitle: Option<string>,
                 readonly pages: Option<number>,
                 readonly language: Option<string>,
+                readonly onlineAddress: Option<string>,
+                readonly accessDate: Option<Date>,
                 readonly customFields: Option<Array<Map<string,string>>>,
                 readonly coverFilePath: string) {}
 
+    private static lensGenerator= <T extends keyof Book>(prop: T) => Lens.fromProp<Book>()(prop);
+    static readVolume = <T extends keyof Book>(book: Book, prop: T) => Book.lensGenerator(prop).get(book);
     // Lenses
     private static typeOfBookLens = Lens.fromProp<Book>()('typeOfBook');
     private static isbn10Lens = Lens.fromProp<Book>()('isbn10');
@@ -170,7 +178,6 @@ export class Book implements BookInterface {
 
     static readCoverFilePath =
         (book: Book) => Book.coverFilePathLens.get(book)
-
 
     /*
     with lens generator

@@ -1,4 +1,0 @@
-
-/*
-Graue Literatur / Bericht / Report
- */
